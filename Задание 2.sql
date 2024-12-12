@@ -12,7 +12,7 @@ ORDER BY duration DESC LIMIT 1;
 
   SELECT *
     FROM artists
-   WHERE artist_name LIKE '%';
+   WHERE artist_name NOT LIKE '% %';
 
   SELECT track_name
     FROM tracks
