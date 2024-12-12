@@ -23,10 +23,11 @@ GROUP BY album_id;
 
   SELECT DISTINCT collection_id
     FROM tracks_collections
-   WHERE track_id IN (SELECT track_id
-                        FROM tracks
-                       WHERE album_id = (SELECT album_id
-                                           FROM album_artist
-                                          WHERE artist_id = 3))
-
+   WHERE track_id IN 
+         (SELECT track_id
+            FROM tracks
+           WHERE album_id = 
+                 (SELECT album_id
+                    FROM album_artist
+                   WHERE artist_id = 3))
 
