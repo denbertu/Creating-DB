@@ -23,6 +23,19 @@ VALUES (1, 'my track 1', '120', 2),
        (5, 'track 5', '360', 2),
        (6, 'track 6', '120', 1);
 
+INSERT INTO tracks (track_id, track_name, duration, album_id)
+VALUES (7, 'my own', '120'),
+       (8, 'own my', '300'), 
+       (9, 'my', '240'),
+       (10, 'oh my god', '180'),
+       (11, 'myself', '360'),
+       (12, 'by myself', '120');
+       (13, 'bemy self', '300'), 
+       (14, 'myself by', '240'),
+       (15, 'by myself by', '180'),
+       (16, 'beemy', '360'),
+       (17, 'premyne', '120');
+
 INSERT INTO collections (collection_id, collection_name, year)
 VALUES (1, 'collection 1', 2017),
        (2, 'collection 2', 2020),
